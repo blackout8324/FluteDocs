@@ -1,0 +1,86 @@
+body{
+    background-color: #101010;
+}
+.MainText{
+    color: white;
+    font-family: Whitney;
+    font-size: 15px;
+}
+.none{
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: Whitney;
+    font-weight: 500;
+}
+.dalux{
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: Whitney;
+    font-weight: 500;
+    animation: dalux 1s ease infinite
+}
+
+.mod{
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: Whitney;
+    font-weight: 500;
+    animation: mod 3s ease infinite;
+}
+/* Animations */
+
+.rainbow {
+    text-decoration: underline;
+    font-family: monospace;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: Whitney;
+    font-weight: 500;
+  }
+
+  .rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+  }
+  
+  @keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+  
+    50% {
+        background-position: 100% 0;
+    }
+  }
+
+  @keyframes dalux{
+    0%{color: #f794af;}
+    50%{color: #ff5483}
+    100%{color: #f794af}
+}
+@keyframes mod{
+    0%{color: #42f5ad;}
+    50%{color: #33b07e;}
+    100%{color: #42f5ad;}
+}
+@keyframes blackout{
+    0%{color: black;}
+    50%{color: white}
+    100%{color: black;}
+}
+.blackout{
+    animation: blackout 3s linear infinite;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: Whitney;
+    font-size: 15px;
+    font-weight: 500;
+}
